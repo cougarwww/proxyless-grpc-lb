@@ -22,6 +22,12 @@ includes:
 
 tasks:
 
+  build:
+    cmds:
+      - task: server:build
+      - task: xds:build
+      - task: client:build
+  
   deploy:
     cmds:
       - task: server:deploy

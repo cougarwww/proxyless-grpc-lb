@@ -7,6 +7,7 @@ RUN GRPC_HEALTH_PROBE_VERSION=v0.3.2 && \
     chmod +x /bin/grpc_health_probe
 
 COPY go.mod go.sum ./
+ENV GOPROXY https://goproxy.cn,direct
 RUN go mod download
 
 COPY . .

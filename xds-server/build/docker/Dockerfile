@@ -5,6 +5,7 @@ WORKDIR /app
 
 COPY go.mod go.sum ./
 # COPY go-control-plane/go.mod go-control-plane/go.sum ./go-control-plane/
+ENV GOPROXY https://goproxy.cn,direct
 RUN go mod download
 
 COPY . .

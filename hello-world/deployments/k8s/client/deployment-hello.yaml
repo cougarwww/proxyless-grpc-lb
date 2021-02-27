@@ -17,13 +17,7 @@ spec:
       containers:
       - name: hello-client
         image: localhost:5000/hello-grpc-client:latest
-        resources:
-          limits:
-            cpu: "200m"
-            memory: "250Mi"
-          requests:
-            cpu: "100m"
-            memory: "100Mi"
+        imagePullPolicy: Never
         volumeMounts:
           - mountPath: /var/run/config
             name: client-config
