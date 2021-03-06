@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/envoyproxy/go-control-plane/pkg/cache/v3"
-	xds "github.com/envoyproxy/go-control-plane/pkg/server/v3"
+	"github.com/envoyproxy/go-control-plane/pkg/cache/v2"
+	xds "github.com/envoyproxy/go-control-plane/pkg/server/v2"
 
 	"github.com/asishrs/proxyless-grpc-lb/xds-server/internal/app"
 

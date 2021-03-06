@@ -13,7 +13,7 @@ import (
 	core "github.com/envoyproxy/go-control-plane/envoy/api/v2/core"
 	lv2 "github.com/envoyproxy/go-control-plane/envoy/config/listener/v2"
 	"github.com/envoyproxy/go-control-plane/pkg/cache/types"
-	cache "github.com/envoyproxy/go-control-plane/pkg/cache/v3"
+	cache "github.com/envoyproxy/go-control-plane/pkg/cache/v2"
 
 	ep "github.com/envoyproxy/go-control-plane/envoy/api/v2/endpoint"
 
