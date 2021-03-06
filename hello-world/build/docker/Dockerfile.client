@@ -18,6 +18,6 @@ ENV GRPC_XDS_BOOTSTRAP=/var/run/config/xds_bootstrap.json
 COPY --from=build /app/main /app
 COPY --from=build /bin/grpc_health_probe /bin
 
-ENTRYPOINT [ "./app/main" ]
+ENTRYPOINT [ "./main" ]
 
 
