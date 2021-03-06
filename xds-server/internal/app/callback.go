@@ -4,7 +4,8 @@ import (
 	"context"
 	"sync"
 
-	v2 "github.com/envoyproxy/go-control-plane/envoy/api/v2"
+	//v2 "github.com/envoyproxy/go-control-plane/envoy/api/v2"
+	v2 "github.com/envoyproxy/go-control-plane/envoy/service/discovery/v3"
 
 	logger "github.com/asishrs/proxyless-grpc-lb/common/pkg/logger"
 	"go.uber.org/zap"
